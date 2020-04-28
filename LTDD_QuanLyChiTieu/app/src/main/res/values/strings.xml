@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LTDD_QuanLyChiTieu</string>
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="remember_me">Nhớ tài khoản</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="home">Trang chủ</string>
+    <string name="add">Thêm</string>
+    <string name="setting">cài đặt</string>
+    <string name="report">Báo cáo</string>
+    <string name="account">Tài khoản</string>
+    <string name="tab_day_1">ngay 1</string>
+    <string name="tab_day_2">ngay 2</string>
+    <string name="tab_day_3">ngay 3</string>
+    <string name="tab_day_4">ngay 4</string>
+    <string name="tab_day_5">ngay 5</string>
+    <string name="tab_day_6">ngay 6</string>
+</resources>

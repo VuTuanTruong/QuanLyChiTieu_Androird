@@ -1,0 +1,2 @@
+rootProject.name='LTDD_QuanLyChiTieu'
+include ':app'
