@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    android:id="@+id/main_activity"
+    >
+
+
+    <ScrollView
+
+        android:id="@+id/scv_taikhoan"
+        android:layout_width="403dp"
+        android:layout_height="601dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:isScrollContainer="true"
+        android:scrollbarSize="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="305dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:src="@drawable/tk_picture"
+                android:onClick="onClick_imgTaiKhoan"/>
+
+
+            <LinearLayout
+                android:id="@+id/ln_ViCuaToi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_ViCuaToi">
+
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_vi"
+                    tools:srcCompat="@drawable/pic_vi" />
+
+                <TextView
+                    android:id="@+id/txt_ViCuaToi"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="6dp"
+
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Ví của tôi"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_Nhom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_Nhom">
+
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_nhom"
+                    tools:srcCompat="@drawable/pic_nhom" />
+
+                <TextView
+                    android:id="@+id/txt_Nhom"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Nhóm"
+                    android:textAllCaps="false"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_CongCu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_CongCu">
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_congcu"
+                    tools:srcCompat="@drawable/pic_congcu" />
+
+                <TextView
+                    android:id="@+id/txt_CongCu"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Công cụ"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="top"
+                android:text="_______________________________________________________"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ln_CaiDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_CaiDat">
+
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_caidat"
+                    tools:srcCompat="@drawable/pic_caidat" />
+
+
+                <TextView
+                    android:id="@+id/txt_CaiDat"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Cài đặt"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="top"
+                android:text="_______________________________________________________"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/ln_HoTro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_HoTro">
+
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_hotro"
+                    tools:srcCompat="@drawable/pic_hotro" />
+
+                <TextView
+                    android:id="@+id/txt_HoTro"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Hỗ trợ"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_GioiThieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:onClick="onClick_GioiThieu">
+
+
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    app:srcCompat="@drawable/pic_gioithieu"
+                    tools:srcCompat="@drawable/pic_gioithieu" />
+
+                <TextView
+                    android:id="@+id/txt_GioiThieu"
+                    android:layout_width="317dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="6dp"
+                    android:text="Giới thiệu"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
